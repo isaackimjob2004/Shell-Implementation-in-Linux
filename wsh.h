@@ -1,8 +1,3 @@
-// Author:  Vojtech Aschenbrenner <asch@cs.wisc.edu>, Fall 2023
-// Revised: John Shawger <shawgerj@cs.wisc.edu>, Spring 2024
-// Revised: Vojtech Aschenbrenner <asch@cs.wisc.edu>, Fall 2024
-// Revised: Leshna Balara <lbalara@cs.wisc.edu>, Spring 2025
-
 #ifndef WSH_H_
 #define WSH_H_
 
