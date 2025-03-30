@@ -1,8 +1,3 @@
-// Author:  Vojtech Aschenbrenner <asch@cs.wisc.edu>, Fall 2023
-// Revised: John Shawger <shawgerj@cs.wisc.edu>, Spring 2024
-// Revised: Vojtech Aschenbrenner <asch@cs.wisc.edu>, Fall 2024
-// Revised: Leshna Balara <lbalara@cs.wisc.edu>, Spring 2025
-
 #include <assert.h>
 #include <dirent.h>
 #include <errno.h>
@@ -52,7 +47,6 @@ int main(int argc, char **argv)
 
 static int exit_status = 0;
 
-/* TODO: Print prompt where appropriate */
 void interactive_main(void)
 {
   if (!getcwd(cwd, MAXLINE))
@@ -71,7 +65,6 @@ void interactive_main(void)
         app_error("fgets error");
       if (feof(stdin))
       {
-          /* TODO: Handle end of file */
         exit(exit_status);
       }
     }
@@ -109,7 +102,6 @@ int batch_main(char *scriptFile)
 }
 
 /* Evaluate a command line */
-/* TODO: Actual Evaluation */
 static char *local_vars[MAXARGS];
 static int local_var_count = 0;
 
@@ -381,7 +373,6 @@ void check_params(char **argv, int argc)
 }
 
 /* Evaluate a command line that contains a pipe */
-/* TODO: The basic parsing in eval_pipe does not handle substitutions of any kind */
 void eval_pipe(char *cmdline)
 {
     // Process cmd substitutions
